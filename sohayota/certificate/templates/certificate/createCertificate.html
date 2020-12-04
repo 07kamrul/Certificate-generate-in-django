@@ -1,0 +1,48 @@
+{% extends 'certificate/index.html' %}
+{% load static %}
+{% block content %}
+
+<br>
+<br>
+<br>
+<center>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.management_form }}
+    <!--                    {{form}}-->
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>{{form.name}}</td>
+                </tr>
+                <tr>
+                    <td>Mobile No</td>
+                    <td>
+                        {{form.mobile_no}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        {{form.email_id}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        {{form.address}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>
+                        {{form.occupation}}
+                    </td>
+                </tr>
+            </table>
+        <br>
+        <input type="submit" name="Submit">
+    </form>
+
+</center>
+{% endblock %}
