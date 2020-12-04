@@ -94,14 +94,14 @@ body {
 .logo {
     display:block;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1;
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
     }
 
 .contact {
     display:block;
-    line-height: 1.6;
+    line-height: 1;
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
     }
